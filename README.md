@@ -28,14 +28,14 @@ Modern vulnerability management suffers from "alert fatigue" because traditional
 
 The repository is modularized into three core services communicating over REST logic.
 
-\`\`\`text
+```text
 ai-vulnerability-intelligence/
 ├── backend-node/      # The API Orchestrator (Node.js/Express)
 ├── dashboard/         # The User Interface (React/Vite)
 ├── ml-service/        # The AI Engine (Python/FastAPI)
 ├── dataset/           # Mock raw data for testing and mapping
 └── README.md          # Project Documentation
-\`\`\`
+```
 
 ### 1. ML Service (`/ml-service`)
 Responsible for executing Data Science and Machine Learning capabilities. 
@@ -68,7 +68,7 @@ The visual presentation layer.
 You will need three separate terminal windows to run all microservices locally.
 
 ### 1. Start the Machine Learning Service (Terminal 1)
-\`\`\`bash
+```bash
 cd ml-service
 
 # Activate your virtual environment (Windows example)
@@ -80,10 +80,10 @@ cd ml-service
 
 # Run the FastAPI server
 uvicorn prediction_api:app --host 0.0.0.0 --port 8000 --reload
-\`\`\`
+```
 
 ### 2. Start the Node.js API Core (Terminal 2)
-\`\`\`bash
+```bash
 cd backend-node
 
 # Install dependencies
@@ -94,10 +94,10 @@ node -e "const bcrypt = require('bcryptjs'); const db = require('./models'); bcr
 
 # Start the Express server
 npm run dev
-\`\`\`
+```
 
 ### 3. Start the React Dashboard (Terminal 3)
-\`\`\`bash
+```bash
 cd dashboard
 
 # Install dependencies
@@ -105,7 +105,7 @@ cd dashboard
 
 # Start the Vite development server
 npm run dev
-\`\`\`
+```
 
 ---
 
