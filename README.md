@@ -2,7 +2,7 @@
 
 > A full-stack security intelligence platform that predicts real-world exploit likelihood and prioritizes vulnerabilities dynamically. It goes beyond static CVSS scores by leveraging Machine Learning (XGBoost) and Explainable AI (SHAP) to provide actionable, context-aware risk intelligence.
 
-## 📋 Overview
+## Overview
 
 Modern vulnerability management suffers from "alert fatigue" because traditional CVSS metrics grade almost everything as "High" or "Critical," lacking environmental context. This platform solves that critical flaw by:
 1. **Ingesting** raw vulnerability scans (via direct JSON payloads simulating output from scanners like OpenVAS or Nessus).
@@ -12,7 +12,7 @@ Modern vulnerability management suffers from "alert fatigue" because traditional
 
 ---
 
-## ✨ Key Features
+## Key Features
 
 - **Microservice Architecture**: Fully decoupled environments utilizing a Python ML engine, Node.js API orchestrator, and React frontend proxy.
 - **Dynamic Prioritization**: Risk scores reflect real-world exploit likelihood rather than static theoretical risk. Tiers (Critical, High, Medium, Low) are bounded by ML probabilities.
@@ -24,7 +24,7 @@ Modern vulnerability management suffers from "alert fatigue" because traditional
 
 ---
 
-## 🏗 System Architecture & Directory Structure
+## System Architecture & Directory Structure
 
 The repository is modularized into three core services communicating over REST logic.
 
@@ -63,7 +63,7 @@ The visual presentation layer.
 
 ---
 
-## 🚀 Quick Start Guide
+## Quick Start Guide
 
 You will need three separate terminal windows to run all microservices locally.
 
@@ -109,7 +109,7 @@ npm run dev
 
 ---
 
-## 🖥 Usage Walkthrough
+## Usage Walkthrough
 
 1. Open your browser to **[http://localhost:5173](http://localhost:5173)**.
 2. Login with the seeded credentials:
@@ -124,5 +124,5 @@ npm run dev
 
 ---
 
-## 🛡 License & Disclaimer
+## License & Disclaimer
 This project is an experimental prototype intended for AI-driven cybersecurity prioritization research. Do not upload actual production vulnerability data strings to unstructured/untrusted environments without auditing network encryption paths.
